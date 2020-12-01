@@ -7,3 +7,19 @@
   height: 100vh;
   margin: auto;
 }
+
+.quote {
+  display: flex;
+}
+
+#quote-line {
+  background: #F7DF94;
+  width: 5px;
+  margin-right: 20px;
+}
+
+.quote h2 {
+  font-family: 'Caveat', cursive;
+  letter-spacing: 0.1em;
+  font-size: 2em;
+}

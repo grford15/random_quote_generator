@@ -6,6 +6,7 @@ class App extends Component {
     return(
       <div className="app-container">
         <div className="quote">
+          <div id="quote-line"></div>
           <h2>Quote will go here</h2>
         </div>
       </div>
