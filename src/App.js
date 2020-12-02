@@ -7,7 +7,8 @@ class App extends Component {
     super(props)
     this.state = {
       quoteText: "",
-      quoteAuthor: ""
+      quoteAuthor: "",
+      quoteGenre: ""
     }
   }
 
@@ -15,27 +16,31 @@ class App extends Component {
     axios.get('https://quote-garden.herokuapp.com/api/v2/quotes/random')
     .then(response => this.setState({
       quoteText: response.data.quote.quoteText,
-      quoteAuthor: response.data.quote.quoteAuthor
+      quoteAuthor: response.data.quote.quoteAuthor,
+      quoteGenre: response.data.quote.quoteGenre
     }))
     .catch(error => console.error(error))
   }
 
   render() {
-    const {quoteText, quoteAuthor} = this.state;
+    const {quoteText, quoteAuthor, quoteGenre} = this.state;
     return(
       <div className="app-container">
-        <div className="quote">
-          <div id="quote-line"></div>
+        
           {quoteText.length > 0 && 
           <div>
+            <div className="quote">
+            <div id="quote-line"></div>
             <h2>{quoteText}</h2>
-          <button id="quote-author">
-            {quoteAuthor}
-          </button>
+            </div>
+          <div id="quote-author">
+            <h4>{quoteAuthor}</h4>
+            <h6>{quoteGenre}</h6>
+          </div>
           </div>
           }
         </div>
-      </div>
+      
     )
   }
 }

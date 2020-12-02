@@ -10,6 +10,7 @@
 
 .quote {
   display: flex;
+  margin-bottom: 2em;
 }
 
 #quote-line {
@@ -22,4 +23,34 @@
   font-family: 'Caveat', cursive;
   letter-spacing: 0.1em;
   font-size: 2em;
+  width: 80vw;
+  margin: auto
+}
+
+#quote-author {
+  display: flex;
+  flex-direction: column;
+  width: 78vw;
+  margin: auto;
+  padding: 1em;
+  cursor: pointer;
+}
+
+#quote-author:hover {
+  background-color: #333333;
+  color: #F2F2F2;
+}
+
+#quote-author h4 {
+  margin: 0.5em 0em;
+  font-size: 1.3em;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}
+
+#quote-author h6 {
+  margin: 0.5em 0em;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  font-weight: 500;
 }
