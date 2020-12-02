@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./components/Home";
+import Quotes from "./components/Quotes";
 import { FaRandom } from "react-icons/fa";
 import "./App.css";
 
@@ -25,7 +26,7 @@ class App extends Component {
 					quoteGenre: response.data.quote.quoteGenre,
 				})
 			)
-			.catch((error) => console.error(error))
+			.catch((error) => console.error(error));
 	}
 
 	render() {
@@ -48,19 +49,10 @@ class App extends Component {
 							/>
 						)}
 					/>
-					{/*        
-          {quoteText.length > 0 && 
-          <div>
-            <div className="quote">
-            <div id="quote-line"></div>
-            <h2>{quoteText}</h2>
-            </div>
-          <div id="quote-author">
-            <h4>{quoteAuthor}</h4>
-            <h6>{quoteGenre}</h6>
-          </div>
-          </div>
-          } */}
+					<Route
+						path="/quotes"
+						render={() => <Quotes quoteAuthor={quoteAuthor} />}
+					/>
 				</div>
 			</Router>
 		);

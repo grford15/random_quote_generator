@@ -1,0 +1,51 @@
+.quote {
+	display: flex;
+	margin-bottom: 2em;
+	padding: 1em;
+}
+
+.quote h2 {
+	font-family: "Caveat", cursive;
+	letter-spacing: 0.1em;
+	font-size: 2em;
+	width: 80vw;
+	margin: auto;
+	color: #333333;
+}
+
+#quote-line {
+	background: #f7df94;
+	width: 5px;
+	margin-right: 20px;
+}
+
+#quote-author {
+	display: flex;
+	flex-direction: column;
+	width: 78vw;
+	margin: auto;
+	padding: 1em;
+	cursor: pointer;
+	border-radius: 10px;
+	text-decoration: none;
+	color: #333333;
+}
+
+#quote-author:hover {
+	background-color: #333333;
+	color: #f2f2f2;
+}
+
+#quote-author h4 {
+	margin: 0.5em 0em;
+	font-size: 1.3em;
+	letter-spacing: 0.1em;
+	font-weight: 600;
+}
+
+#quote-author h6 {
+	margin: 0.5em 0em;
+	font-size: 1em;
+	letter-spacing: 0.1em;
+	font-weight: 500;
+}
