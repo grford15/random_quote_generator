@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { FaRandom } from "react-icons/fa";
 import './App.css';
 
 class App extends Component {
@@ -26,6 +27,7 @@ class App extends Component {
     const {quoteText, quoteAuthor, quoteGenre} = this.state;
     return(
       <div className="app-container">
+        <div id="logo">RandomQuotes <FaRandom onClick={() => window.location.reload(false)}/></div>
         
           {quoteText.length > 0 && 
           <div>
