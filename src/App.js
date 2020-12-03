@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Home from "./components/Home";
 import Quotes from "./components/Quotes";
 import { FaRandom } from "react-icons/fa";
@@ -34,6 +34,9 @@ class App extends Component {
 		return (
 			<Router>
 				<div className="app-container">
+					<Link to="/" id="Home">
+						Home
+					</Link>
 					<div id="logo">
 						RandomQuotes{" "}
 						<FaRandom onClick={() => window.location.reload(false)} />

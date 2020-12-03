@@ -1,0 +1,7 @@
+.quote-list {
+	display: flex;
+	flex-direction: column;
+	margin-top: 2em;
+	align-self: baseline;
+	align-items: center;
+}
