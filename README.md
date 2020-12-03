@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://eloquent-torvalds-53149d.netlify.app/">
       Demo
     </a>
     <span> | </span>
@@ -27,7 +27,7 @@
 ## Table of Contents
 
 - [Overview](#overview)
-  - [Built With](#built-with)
+- [Built With](#built-with)
 - [Features](#features)
 - [How to use](#how-to-use)
 - [Contact](#contact)
@@ -51,13 +51,15 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 - [React](https://reactjs.org/)
+- [React-Icons](https://react-icons.github.io/react-icons/)
+- [Axios](https://github.com/axios/axios)
+- [React-Router](https://reactrouter.com/)
 
 ## Features
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/8Y3J4ucAMQpSnYTwwWW8) was to build an application to complete the given user stories.
-
 
 ## How To Use
 
@@ -82,9 +84,10 @@ $ npm start
 
 - [Node.js](https://nodejs.org/)
 - [Marked - a markdown parser](https://github.com/chjj/marked)
+- [QuoteGarden - A Random Quote Generator API](https://pprathameshmore.github.io/QuoteGarden/)
 
 ## Contact
 
 - Website [your-website.com](https://greg-rutherford.com)
 - GitHub [@your-username](https://github.com/grford15)
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- Twitter [@your-twitter](https://twitter.com/GregRutherfor20)
