@@ -1,7 +1,16 @@
 import React from "react";
 
-const Quotes = (props) => {
-	return <h2>Quotes Page</h2>;
-};
+class Quotes extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			quotes: [],
+		};
+	}
+
+	render() {
+		return <h1>Updated Quotes page</h1>;
+	}
+}
 
 export default Quotes;
